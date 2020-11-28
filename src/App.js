@@ -1,8 +1,13 @@
 import Home from './pages/home';
+import { ThemeProvider } from '@material-ui/core/styles';
+
+import theme from './theme';
 
 function App() {
-  return (
-    <Home></Home>
+  return (    
+    <ThemeProvider theme={theme}>
+      <Home/>
+    </ThemeProvider>
   );
 }
 
